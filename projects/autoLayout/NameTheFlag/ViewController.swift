@@ -5,7 +5,7 @@
 //  Created by Damian Johns on 4/06/2020.
 //  Copyright © 2020 Damian Johns. All rights reserved.
 //
-
+import GameplayKit
 import UIKit
 
 class ViewController: UIViewController {
@@ -38,8 +38,8 @@ class ViewController: UIViewController {
     }
     
     func askQuestion(_ action: UIAlertAction! = nil) {
-        countries.shuffle()
-        countries.shuffleInPlace()
+        countries = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: countries) as! [String]
+        
         button1.setImage(UIImage(named: countries[0]), for: UIControlState())
         button2.setImage(UIImage(named: countries[1]), for: UIControlState())
         button3.setImage(UIImage(named: countries[2]), for: UIControlState())
