@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkK-qd-cdz">
-                                <rect key="frame" x="87" y="153" width="200" height="100"/>
+                                <rect key="frame" x="87.5" y="124" width="200" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="OkK-qd-cdz" secondAttribute="height" multiplier="2:1" id="mFu-Nx-UIC"/>
                                 </constraints>
@@ -33,7 +33,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tn-EG-PoZ">
-                                <rect key="frame" x="87" y="283" width="200" height="100"/>
+                                <rect key="frame" x="87" y="254" width="201" height="100.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="5tn-EG-PoZ" secondAttribute="height" multiplier="2:1" id="Wn7-Vt-aJi"/>
                                 </constraints>
@@ -43,7 +43,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vY5-mb-9J1">
-                                <rect key="frame" x="87" y="413" width="200" height="100"/>
+                                <rect key="frame" x="87.5" y="384.5" width="200" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="vY5-mb-9J1" secondAttribute="height" multiplier="2:1" id="Sye-PJ-3Mb"/>
                                 </constraints>
@@ -58,12 +58,12 @@
                             <constraint firstItem="5tn-EG-PoZ" firstAttribute="height" secondItem="OkK-qd-cdz" secondAttribute="height" id="KAS-WN-FbA"/>
                             <constraint firstItem="5tn-EG-PoZ" firstAttribute="top" secondItem="OkK-qd-cdz" secondAttribute="bottom" constant="30" id="UZG-bt-K93"/>
                             <constraint firstItem="OkK-qd-cdz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VDs-Fb-mSJ"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vY5-mb-9J1" secondAttribute="bottom" constant="30" id="bEb-3c-emw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vY5-mb-9J1" secondAttribute="bottom" constant="60" id="bEb-3c-emw"/>
                             <constraint firstItem="5tn-EG-PoZ" firstAttribute="centerX" secondItem="OkK-qd-cdz" secondAttribute="centerX" id="btw-N3-Zus"/>
                             <constraint firstItem="vY5-mb-9J1" firstAttribute="centerX" secondItem="5tn-EG-PoZ" secondAttribute="centerX" id="lTd-ea-x3w"/>
                             <constraint firstItem="vY5-mb-9J1" firstAttribute="height" secondItem="5tn-EG-PoZ" secondAttribute="height" id="mKz-lx-HQP"/>
                             <constraint firstItem="vY5-mb-9J1" firstAttribute="top" secondItem="5tn-EG-PoZ" secondAttribute="bottom" constant="30" id="mXX-Ci-gsS"/>
-                            <constraint firstItem="OkK-qd-cdz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="89" id="qBM-td-2Ly"/>
+                            <constraint firstItem="OkK-qd-cdz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="qBM-td-2Ly"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2LN-8V-CIM"/>
