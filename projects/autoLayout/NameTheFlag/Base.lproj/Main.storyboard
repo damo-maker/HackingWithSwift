@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G22010" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ten-t2-0Oq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NameTheFlag" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkK-qd-cdz">
+                                <rect key="frame" x="87" y="153" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OkK-qd-cdz" secondAttribute="height" multiplier="2:1" id="mFu-Nx-UIC"/>
+                                </constraints>
+                                <state key="normal" image="ireland"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s08-or-z1z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tn-EG-PoZ">
+                                <rect key="frame" x="87" y="283" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5tn-EG-PoZ" secondAttribute="height" multiplier="2:1" id="Wn7-Vt-aJi"/>
+                                </constraints>
+                                <state key="normal" image="ireland"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="37N-k7-fJa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vY5-mb-9J1">
+                                <rect key="frame" x="87" y="413" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vY5-mb-9J1" secondAttribute="height" multiplier="2:1" id="Sye-PJ-3Mb"/>
+                                </constraints>
+                                <state key="normal" image="ireland"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l2D-hY-e7Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5tn-EG-PoZ" firstAttribute="height" secondItem="OkK-qd-cdz" secondAttribute="height" id="KAS-WN-FbA"/>
+                            <constraint firstItem="5tn-EG-PoZ" firstAttribute="top" secondItem="OkK-qd-cdz" secondAttribute="bottom" constant="30" id="UZG-bt-K93"/>
+                            <constraint firstItem="OkK-qd-cdz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VDs-Fb-mSJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vY5-mb-9J1" secondAttribute="bottom" constant="30" id="bEb-3c-emw"/>
+                            <constraint firstItem="5tn-EG-PoZ" firstAttribute="centerX" secondItem="OkK-qd-cdz" secondAttribute="centerX" id="btw-N3-Zus"/>
+                            <constraint firstItem="vY5-mb-9J1" firstAttribute="centerX" secondItem="5tn-EG-PoZ" secondAttribute="centerX" id="lTd-ea-x3w"/>
+                            <constraint firstItem="vY5-mb-9J1" firstAttribute="height" secondItem="5tn-EG-PoZ" secondAttribute="height" id="mKz-lx-HQP"/>
+                            <constraint firstItem="vY5-mb-9J1" firstAttribute="top" secondItem="5tn-EG-PoZ" secondAttribute="bottom" constant="30" id="mXX-Ci-gsS"/>
+                            <constraint firstItem="OkK-qd-cdz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="89" id="qBM-td-2Ly"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2LN-8V-CIM"/>
+                    <connections>
+                        <outlet property="button1" destination="OkK-qd-cdz" id="WPD-ea-fgB"/>
+                        <outlet property="button2" destination="5tn-EG-PoZ" id="3Mh-7X-WpT"/>
+                        <outlet property="button3" destination="vY5-mb-9J1" id="oTL-n9-c40"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1182" y="1047"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xp3-LM-kdu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ten-t2-0Oq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ws6-eh-w56">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FH1-dA-sbr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jy0-RW-eA7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="1047"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ireland" width="200" height="100"/>
+    </resources>
+</document>
