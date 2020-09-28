@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import Foundation
 
 class DetailViewController: UIViewController {
     var detailItem: [String: String]!
