@@ -21,6 +21,8 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        guard detailItem != nil else { return }
+        
         if let body = detailItem["body"] {
             var html = "<html>"
             html += "<head>"
@@ -34,7 +36,9 @@ class DetailViewController: UIViewController {
             
             webView.loadHTMLString(html, baseURL: nil)
             
-            navigationController!.setNavigationBarHidden(false, animated:true)
+    // I tried to create the missing backbutton
+            
+    /*      navigationController!.setNavigationBarHidden(false, animated:true)
             let myBackButton:UIButton = UIButton() as UIButton
             myBackButton.addTarget(self, action: #selector(DetailViewController.popToRoot(_:)), for: UIControlEvents.touchUpInside)
             myBackButton.setTitle("< back", for: UIControlState())
@@ -42,16 +46,17 @@ class DetailViewController: UIViewController {
             myBackButton.sizeToFit()
             let myCustomBackButtonItem:UIBarButtonItem = UIBarButtonItem(customView: myBackButton)
             self.navigationItem.leftBarButtonItem  = myCustomBackButtonItem
+     */
             
         }
         
     }
     
-    @objc func popToRoot(_ sender:UIBarButtonItem){
+   /*   @objc func popToRoot(_ sender:UIBarButtonItem){
         self.navigationController!.popToRootViewController(animated: true)
     }
+   */
     
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

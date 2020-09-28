@@ -42,7 +42,7 @@
 		F1F17BF6248CFDA4006BA84E = {
 			isa = PBXGroup;
 			children = (
-				F1F17C01248CFDA5006BA84E /* WhitehousePetition */,
+				F1F17C01248CFDA5006BA84E /* GrandCentralDispatch */,
 				F1F17C00248CFDA5006BA84E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,7 +55,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F1F17C01248CFDA5006BA84E /* WhitehousePetition */ = {
+		F1F17C01248CFDA5006BA84E /* GrandCentralDispatch */ = {
 			isa = PBXGroup;
 			children = (
 				F1F17C02248CFDA5006BA84E /* AppDelegate.swift */,
@@ -67,7 +67,7 @@
 				F1F17C0D248CFDA5006BA84E /* LaunchScreen.storyboard */,
 				F1F17C10248CFDA5006BA84E /* Info.plist */,
 			);
-			path = WhitehousePetition;
+			path = GrandCentralDispatch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,9 +256,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = WhitehousePetition/Info.plist;
+				INFOPLIST_FILE = GrandCentralDispatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.damianjohns.WhitehousePetition;
+				PRODUCT_BUNDLE_IDENTIFIER = com.damianjohns.GrandCentralDispatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -268,9 +268,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = WhitehousePetition/Info.plist;
+				INFOPLIST_FILE = GrandCentralDispatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.damianjohns.WhitehousePetition;
+				PRODUCT_BUNDLE_IDENTIFIER = com.damianjohns.GrandCentralDispatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
