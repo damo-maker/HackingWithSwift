@@ -10,7 +10,7 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
-
+    
     var window: UIWindow?
 
 
@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         vc.tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 1)
         
         tabBarController.viewControllers?.append(vc)
-        
+
         return true
     }
 
