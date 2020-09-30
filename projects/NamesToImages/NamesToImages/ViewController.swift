@@ -36,8 +36,10 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         cell.name.text = newimage.name
         
-        let path = getDocumentsDirectory().appending(newimage.image)
-        cell.imageView.image = UIImage(contentsOfFile: path)
+        /*let path = getDocumentsDirectory().appending(newimage.image) */
+        let path = getDocumentsDirectory().appendingPathComponent(newimage.image)
+        /*cell.imageView.image = UIImage(contentsOfFile: path) */
+        cell.imageView.image = UIImage(contentsOfFile: path.path)
         
         cell.imageView.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3).cgColor
         cell.imageView.layer.borderWidth = 2
@@ -87,7 +89,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     } */
         
         if let jpegData = UIImageJPEGRepresentation(newImage, 80) {
-   try? jpegData.write(to: URL(fileURLWithPath: imagePath), options: [.atomic]) 
+   try? jpegData.write(to: imagePath)
+/* try? jpegData.write(to: imagePath(fileURLWithPath: imagePath), options: [.atomic]) */
+ 
         }
     let newimage = NewImage(name: "unknown", image: imageName)
     images.append(newimage)
@@ -101,14 +105,20 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         dismiss(animated: true, completion: nil)
     }
     
-    func getDocumentsDirectory() -> NSString {
+    /*func getDocumentsDirectory() -> NSString {
         let paths = NSSearchPathForDirectoriesInDomains(.documentationDirectory, .userDomainMask, true)
         let documentsDirectory = paths[0]
         return documentsDirectory as NSString
+    } */
+    
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
     }
 }
     
-    
+
     
 
 
