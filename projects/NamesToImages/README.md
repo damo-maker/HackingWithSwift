@@ -1,2 +1,2 @@
 # NamesToImages Project 10
-This project crashes, giving a SIGABRT warning when you click on the leftBarButtonItem. Unable to get addImageCell function to work.
+This project uses a UIImagePickerController type to access the photo library in iOS. It can save and rename an image.
