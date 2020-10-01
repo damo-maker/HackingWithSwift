@@ -36,9 +36,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         cell.name.text = newimage.name
         
-        /*let path = getDocumentsDirectory().appending(newimage.image) */
         let path = getDocumentsDirectory().appendingPathComponent(newimage.image)
-        /*cell.imageView.image = UIImage(contentsOfFile: path) */
         cell.imageView.image = UIImage(contentsOfFile: path.path)
         
         cell.imageView.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3).cgColor
@@ -73,43 +71,36 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        //var newImage: UIImage
         
         guard let newImage = info[UIImagePickerControllerEditedImage] as? UIImage else { return }
         
         let imageName = UUID().uuidString
         let imagePath = getDocumentsDirectory().appendingPathComponent(imageName)
         
-    /*if let possibleImage = info["UIImagePickerControllerEditedImage"] as? UIImage {
+   /* if let possibleImage = info["UIImagePickerControllerEditedImage"] as? UIImage {
         newImage = possibleImage
     } else if let possibleImage = info["UIImagePickerControllerOriginalImage"] as? UIImage {
         newImage = possibleImage
     } else {
-        return
-    } */
+         print("Something went wrong")
+         return
+    }   */
         
         if let jpegData = UIImageJPEGRepresentation(newImage, 80) {
-   try? jpegData.write(to: imagePath)
-/* try? jpegData.write(to: imagePath(fileURLWithPath: imagePath), options: [.atomic]) */
- 
+            try? jpegData.write(to: imagePath)
         }
+        
     let newimage = NewImage(name: "unknown", image: imageName)
     images.append(newimage)
         
     collectionView.reloadData()
         
-   dismiss(animated: true, completion: nil)
+    dismiss(animated: true, completion: nil)
   }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
     }
-    
-    /*func getDocumentsDirectory() -> NSString {
-        let paths = NSSearchPathForDirectoriesInDomains(.documentationDirectory, .userDomainMask, true)
-        let documentsDirectory = paths[0]
-        return documentsDirectory as NSString
-    } */
     
     func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
