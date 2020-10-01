@@ -58,6 +58,10 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="lgW-fN-Mv3"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="nnd-Z0-opi"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -65,7 +69,7 @@
                             <constraint firstAttribute="right" secondItem="hcB-df-P9J" secondAttribute="right" id="9Tm-X1-fJe"/>
                             <constraint firstItem="hcB-df-P9J" firstAttribute="left" secondItem="8bC-Xf-vdC" secondAttribute="left" id="Dek-TU-fRV"/>
                             <constraint firstItem="hcB-df-P9J" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="G9g-pQ-UBF"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hcB-df-P9J" secondAttribute="bottom" constant="136" id="xYD-Kj-7YS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hcB-df-P9J" secondAttribute="bottom" constant="136" id="xVD-tC-TNU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Image Gallery" id="bwr-D8-AWb">
