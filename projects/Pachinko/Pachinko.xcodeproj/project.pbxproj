@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F12DA0852493A140004888D7 /* bouncer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F12DA0842493A140004888D7 /* bouncer@2x.png */; };
+		F13CA297249201330038EAAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13CA296249201330038EAAF /* AppDelegate.swift */; };
+		F13CA299249201340038EAAF /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F13CA298249201340038EAAF /* GameScene.sks */; };
+		F13CA29B249201340038EAAF /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13CA29A249201340038EAAF /* GameScene.swift */; };
+		F13CA29D249201340038EAAF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13CA29C249201340038EAAF /* GameViewController.swift */; };
+		F13CA2A0249201340038EAAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F13CA29E249201340038EAAF /* Main.storyboard */; };
+		F13CA2A2249201340038EAAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13CA2A1249201340038EAAF /* Assets.xcassets */; };
+		F13CA2A5249201340038EAAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F13CA2A3249201340038EAAF /* LaunchScreen.storyboard */; };
+		F13CA2BC249204310038EAAF /* background@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F13CA2AD249204310038EAAF /* background@2x.jpg */; };
+		F13CA2BD249204310038EAAF /* ballBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F13CA2AE249204310038EAAF /* ballBlue@2x.png */; };
+		F13CA2BE249204310038EAAF /* ballCyan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F13CA2AF249204310038EAAF /* ballCyan@2x.png */; };
+		F13CA2BF249204310038EAAF /* ballGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F13CA2B0249204310038EAAF /* ballGreen@2x.png */; };
+		F13CA2C0249204310038EAAF /* ballGrey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F13CA2B1249204310038EAAF /* ballGrey@2x.png */; };
+		F13CA2C1249204310038EAAF /* ballPurple@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F13CA2B2249204310038EAAF /* ballPurple@2x.png */; };
+		F13CA2C2249204310038EAAF /* ballRed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F13CA2B3249204310038EAAF /* ballRed@2x.png */; };
+		F13CA2C3249204310038EAAF /* ballYellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F13CA2B4249204310038EAAF /* ballYellow@2x.png */; };
+		F13CA2C5249204310038EAAF /* FireParticles.sks in Resources */ = {isa = PBXBuildFile; fileRef = F13CA2B6249204310038EAAF /* FireParticles.sks */; };
+		F13CA2C6249204310038EAAF /* slotBaseBad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F13CA2B7249204310038EAAF /* slotBaseBad@2x.png */; };
+		F13CA2C7249204310038EAAF /* slotBaseGood@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F13CA2B8249204310038EAAF /* slotBaseGood@2x.png */; };
+		F13CA2C8249204310038EAAF /* slotGlowBad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F13CA2B9249204310038EAAF /* slotGlowBad@2x.png */; };
+		F13CA2C9249204310038EAAF /* slotGlowGood@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F13CA2BA249204310038EAAF /* slotGlowGood@2x.png */; };
+		F13CA2CA249204310038EAAF /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = F13CA2BB249204310038EAAF /* spark.png */; };
+		F16607AF24944E9B0082551F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16607AE24944E9B0082551F /* Helper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F12DA0842493A140004888D7 /* bouncer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bouncer@2x.png"; sourceTree = "<group>"; };
+		F13CA293249201330038EAAF /* Pachinko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pachinko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F13CA296249201330038EAAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F13CA298249201340038EAAF /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		F13CA29A249201340038EAAF /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		F13CA29C249201340038EAAF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		F13CA29F249201340038EAAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F13CA2A1249201340038EAAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F13CA2A4249201340038EAAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F13CA2A6249201340038EAAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F13CA2AD249204310038EAAF /* background@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background@2x.jpg"; sourceTree = "<group>"; };
+		F13CA2AE249204310038EAAF /* ballBlue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ballBlue@2x.png"; sourceTree = "<group>"; };
+		F13CA2AF249204310038EAAF /* ballCyan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ballCyan@2x.png"; sourceTree = "<group>"; };
+		F13CA2B0249204310038EAAF /* ballGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ballGreen@2x.png"; sourceTree = "<group>"; };
+		F13CA2B1249204310038EAAF /* ballGrey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ballGrey@2x.png"; sourceTree = "<group>"; };
+		F13CA2B2249204310038EAAF /* ballPurple@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ballPurple@2x.png"; sourceTree = "<group>"; };
+		F13CA2B3249204310038EAAF /* ballRed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ballRed@2x.png"; sourceTree = "<group>"; };
+		F13CA2B4249204310038EAAF /* ballYellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ballYellow@2x.png"; sourceTree = "<group>"; };
+		F13CA2B6249204310038EAAF /* FireParticles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FireParticles.sks; sourceTree = "<group>"; };
+		F13CA2B7249204310038EAAF /* slotBaseBad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slotBaseBad@2x.png"; sourceTree = "<group>"; };
+		F13CA2B8249204310038EAAF /* slotBaseGood@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slotBaseGood@2x.png"; sourceTree = "<group>"; };
+		F13CA2B9249204310038EAAF /* slotGlowBad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slotGlowBad@2x.png"; sourceTree = "<group>"; };
+		F13CA2BA249204310038EAAF /* slotGlowGood@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slotGlowGood@2x.png"; sourceTree = "<group>"; };
+		F13CA2BB249204310038EAAF /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		F16607AE24944E9B0082551F /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F13CA290249201330038EAAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F13CA28A249201330038EAAF = {
+			isa = PBXGroup;
+			children = (
+				F13CA295249201330038EAAF /* Pachinko */,
+				F13CA294249201330038EAAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F13CA294249201330038EAAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F13CA293249201330038EAAF /* Pachinko.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F13CA295249201330038EAAF /* Pachinko */ = {
+			isa = PBXGroup;
+			children = (
+				F13CA296249201330038EAAF /* AppDelegate.swift */,
+				F13CA298249201340038EAAF /* GameScene.sks */,
+				F16607AE24944E9B0082551F /* Helper.swift */,
+				F13CA29A249201340038EAAF /* GameScene.swift */,
+				F13CA29C249201340038EAAF /* GameViewController.swift */,
+				F13CA29E249201340038EAAF /* Main.storyboard */,
+				F13CA2A1249201340038EAAF /* Assets.xcassets */,
+				F13CA2AC249204300038EAAF /* Content */,
+				F13CA2A3249201340038EAAF /* LaunchScreen.storyboard */,
+				F13CA2A6249201340038EAAF /* Info.plist */,
+			);
+			path = Pachinko;
+			sourceTree = "<group>";
+		};
+		F13CA2AC249204300038EAAF /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				F13CA2AD249204310038EAAF /* background@2x.jpg */,
+				F13CA2AE249204310038EAAF /* ballBlue@2x.png */,
+				F13CA2AF249204310038EAAF /* ballCyan@2x.png */,
+				F13CA2B0249204310038EAAF /* ballGreen@2x.png */,
+				F13CA2B1249204310038EAAF /* ballGrey@2x.png */,
+				F13CA2B2249204310038EAAF /* ballPurple@2x.png */,
+				F13CA2B3249204310038EAAF /* ballRed@2x.png */,
+				F13CA2B4249204310038EAAF /* ballYellow@2x.png */,
+				F13CA2B6249204310038EAAF /* FireParticles.sks */,
+				F12DA0842493A140004888D7 /* bouncer@2x.png */,
+				F13CA2B7249204310038EAAF /* slotBaseBad@2x.png */,
+				F13CA2B8249204310038EAAF /* slotBaseGood@2x.png */,
+				F13CA2B9249204310038EAAF /* slotGlowBad@2x.png */,
+				F13CA2BA249204310038EAAF /* slotGlowGood@2x.png */,
+				F13CA2BB249204310038EAAF /* spark.png */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F13CA292249201330038EAAF /* Pachinko */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F13CA2A9249201340038EAAF /* Build configuration list for PBXNativeTarget "Pachinko" */;
+			buildPhases = (
+				F13CA28F249201330038EAAF /* Sources */,
+				F13CA290249201330038EAAF /* Frameworks */,
+				F13CA291249201330038EAAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pachinko;
+			productName = Pachinko;
+			productReference = F13CA293249201330038EAAF /* Pachinko.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F13CA28B249201330038EAAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Damian Johns";
+				TargetAttributes = {
+					F13CA292249201330038EAAF = {
+						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0820;
+					};
+				};
+			};
+			buildConfigurationList = F13CA28E249201330038EAAF /* Build configuration list for PBXProject "Pachinko" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F13CA28A249201330038EAAF;
+			productRefGroup = F13CA294249201330038EAAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F13CA292249201330038EAAF /* Pachinko */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F13CA291249201330038EAAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F13CA299249201340038EAAF /* GameScene.sks in Resources */,
+				F13CA2C3249204310038EAAF /* ballYellow@2x.png in Resources */,
+				F13CA2C1249204310038EAAF /* ballPurple@2x.png in Resources */,
+				F13CA2C2249204310038EAAF /* ballRed@2x.png in Resources */,
+				F13CA2BF249204310038EAAF /* ballGreen@2x.png in Resources */,
+				F13CA2C6249204310038EAAF /* slotBaseBad@2x.png in Resources */,
+				F13CA2CA249204310038EAAF /* spark.png in Resources */,
+				F13CA2C7249204310038EAAF /* slotBaseGood@2x.png in Resources */,
+				F13CA2A5249201340038EAAF /* LaunchScreen.storyboard in Resources */,
+				F13CA2C9249204310038EAAF /* slotGlowGood@2x.png in Resources */,
+				F13CA2BE249204310038EAAF /* ballCyan@2x.png in Resources */,
+				F13CA2C0249204310038EAAF /* ballGrey@2x.png in Resources */,
+				F13CA2A2249201340038EAAF /* Assets.xcassets in Resources */,
+				F13CA2BC249204310038EAAF /* background@2x.jpg in Resources */,
+				F13CA2A0249201340038EAAF /* Main.storyboard in Resources */,
+				F13CA2BD249204310038EAAF /* ballBlue@2x.png in Resources */,
+				F13CA2C5249204310038EAAF /* FireParticles.sks in Resources */,
+				F13CA2C8249204310038EAAF /* slotGlowBad@2x.png in Resources */,
+				F12DA0852493A140004888D7 /* bouncer@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F13CA28F249201330038EAAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F13CA29B249201340038EAAF /* GameScene.swift in Sources */,
+				F13CA29D249201340038EAAF /* GameViewController.swift in Sources */,
+				F13CA297249201330038EAAF /* AppDelegate.swift in Sources */,
+				F16607AF24944E9B0082551F /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F13CA29E249201340038EAAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F13CA29F249201340038EAAF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F13CA2A3249201340038EAAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F13CA2A4249201340038EAAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F13CA2A7249201340038EAAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		F13CA2A8249201340038EAAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F13CA2AA249201340038EAAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Pachinko/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.damianjohns.Pachinko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F13CA2AB249201340038EAAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Pachinko/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.damianjohns.Pachinko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F13CA28E249201330038EAAF /* Build configuration list for PBXProject "Pachinko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F13CA2A7249201340038EAAF /* Debug */,
+				F13CA2A8249201340038EAAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F13CA2A9249201340038EAAF /* Build configuration list for PBXNativeTarget "Pachinko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F13CA2AA249201340038EAAF /* Debug */,
+				F13CA2AB249201340038EAAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F13CA28B249201330038EAAF /* Project object */;
+}
