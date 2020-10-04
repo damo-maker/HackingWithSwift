@@ -6,7 +6,7 @@
 //  Copyright © 2020 Damian Johns. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class NewImage: NSObject, NSCoding {
     var name: String
@@ -19,7 +19,7 @@ class NewImage: NSObject, NSCoding {
     
     required init(coder aDecoder: NSCoder) {
         name = aDecoder.decodeObject(forKey: "name") as! String
-        image = aDecoder.decodeObject(forKey: "image") as! String
+        image = aDecoder.decodeObject(forKey: "image") as! String 
     }
     
     func encode(with aCoder: NSCoder) {

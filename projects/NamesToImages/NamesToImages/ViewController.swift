@@ -72,19 +72,19 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
-        guard let newImage = info[UIImagePickerControllerEditedImage] as? UIImage else { return }
+        guard var newImage = info[UIImagePickerControllerEditedImage] as? UIImage else { return }
         
         let imageName = UUID().uuidString
         let imagePath = getDocumentsDirectory().appendingPathComponent(imageName)
         
-   /* if let possibleImage = info["UIImagePickerControllerEditedImage"] as? UIImage {
+    if let possibleImage = info["UIImagePickerControllerEditedImage"] as? UIImage {
         newImage = possibleImage
     } else if let possibleImage = info["UIImagePickerControllerOriginalImage"] as? UIImage {
         newImage = possibleImage
     } else {
          print("Something went wrong")
          return
-    }   */
+    }   
         
         if let jpegData = UIImageJPEGRepresentation(newImage, 80) {
             try? jpegData.write(to: imagePath)

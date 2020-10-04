@@ -18,8 +18,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Names to Images"
-        
         let defaults = UserDefaults.standard
         
         if let savedImages = defaults.object(forKey: "images") as? Data {
@@ -27,7 +25,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         }
         
         
-       navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(ViewController.addImageCell))
+       navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addImageCell))
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,6 +33,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         // Dispose of any resources that can be recreated.
     }
 
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return images.count
     }
@@ -46,8 +45,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         cell.name.text = newimage.name
         
-        let path = getDocumentsDirectory().appending(newimage.image)
-        cell.imageView.image = UIImage(contentsOfFile: path)
+        let path = getDocumentsDirectory().appendingPathComponent(newimage.image)
+        cell.imageView.image = UIImage(contentsOfFile: path.path)
         
         cell.imageView.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3).cgColor
         cell.imageView.layer.borderWidth = 2
@@ -55,7 +54,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         cell.layer.cornerRadius = 7
         
         return cell
-        }
+    }
+    
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let image = images[indexPath.item]
@@ -67,13 +67,11 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             let newName = ac.textFields![0] as UITextField
             image.name = newName.text!
             self.collectionView.reloadData()
-            
-            self.save()
         })
         
         present(ac, animated: true, completion: nil)
     }
- 
+    
     func addImageCell() {
         let picker = UIImagePickerController()
         picker.allowsEditing = true
@@ -82,43 +80,45 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        var newImage: UIImage
+        // var newImage: UIImage
+        guard var newImage = info[UIImagePickerControllerEditedImage] as? UIImage else { return }
         
-    if let possibleImage = info["UIImagePickerControllerEditedImage"] as? UIImage {
-        newImage = possibleImage
-    } else if let possibleImage = info["UIImageImagePickerControllerOriginalImage"] as? UIImage {
-        newImage = possibleImage
-    } else {
-        return
+        let imageName = UUID().uuidString
+        let imagePath = getDocumentsDirectory().appendingPathComponent(imageName)
+        
+        if let possibleImage = info["UIImagePickerControllerEditedImage"] as? UIImage {
+            newImage = possibleImage
+        } else if let possibleImage = info["UIImagePickerControllerOriginalImage"] as? UIImage {
+            newImage = possibleImage
+        } else {
+            print("Something went wrong")
+            return
+        }
+        
+        if let jpegData = UIImageJPEGRepresentation(newImage, 80) {
+            try? jpegData.write(to: imagePath)
+        }
+        
+        let newimage = NewImage(name: "unknown", image: imageName)
+        images.append(newimage)
+        
+        collectionView.reloadData()
+        
+        dismiss(animated: true, completion: nil)
     }
-        
-    let imageName = UUID().uuidString
-    let imagePath = getDocumentsDirectory().appending(imageName)
-    let jpegData = UIImageJPEGRepresentation(newImage, 80)
-   try? jpegData?.write(to: URL(fileURLWithPath: imagePath), options: [.atomic])
-        
-    let newimage = NewImage(name: "unknown", image: imageName)
-    images.append(newimage)
-        
-    collectionView.reloadData()
-        
-    save()
-        
-   dismiss(animated: true, completion: nil)
-  }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
     }
     
-    func getDocumentsDirectory() -> NSString {
-        let paths = NSSearchPathForDirectoriesInDomains(.documentationDirectory, .userDomainMask, true) as [NSString]
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let documentsDirectory = paths[0]
         return documentsDirectory
     }
     
     func save() {
-        let savedData = NSKeyedArchiver.archivedData(withRootObject: images)
+        let savedData = NSKeyedArchiver.archivedData(withRootObject: images )
         let defaults = UserDefaults.standard
         defaults.set(savedData, forKey: "images")
     }

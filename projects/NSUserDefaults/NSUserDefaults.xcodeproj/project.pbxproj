@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -42,7 +42,7 @@
 		F12CE52B2484E46500D4A4CB = {
 			isa = PBXGroup;
 			children = (
-				F12CE5362484E46600D4A4CB /* NamesToImages */,
+				F12CE5362484E46600D4A4CB /* NSUserDefaults */,
 				F12CE5352484E46600D4A4CB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,7 +55,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F12CE5362484E46600D4A4CB /* NamesToImages */ = {
+		F12CE5362484E46600D4A4CB /* NSUserDefaults */ = {
 			isa = PBXGroup;
 			children = (
 				F12CE5372484E46600D4A4CB /* AppDelegate.swift */,
@@ -67,7 +67,7 @@
 				F12CE5492484EEE900D4A4CB /* ImageCell.swift */,
 				F12CE54B24852B7B00D4A4CB /* NewImage.swift */,
 			);
-			path = NamesToImages;
+			path = NSUserDefaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,7 +107,7 @@
 				};
 			};
 			buildConfigurationList = F12CE52F2484E46500D4A4CB /* Build configuration list for PBXProject "NSUserDefaults" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -256,9 +256,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = NamesToImages/Info.plist;
+				INFOPLIST_FILE = NSUserDefaults/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.damianjohns.NamesToImages;
+				PRODUCT_BUNDLE_IDENTIFIER = com.damianjohns.NSUserDefaults;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -269,9 +270,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = NamesToImages/Info.plist;
+				INFOPLIST_FILE = NSUserDefaults/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.damianjohns.NamesToImages;
+				PRODUCT_BUNDLE_IDENTIFIER = com.damianjohns.NSUserDefaults;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 2;
