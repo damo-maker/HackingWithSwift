@@ -24,7 +24,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             images = NSKeyedUnarchiver.unarchiveObject(with: savedImages) as! [NewImage]
         }
         
-        
        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addImageCell))
     }
 
@@ -93,7 +92,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         } else {
             print("Something went wrong")
             return
-        }
+        } 
         
         if let jpegData = UIImageJPEGRepresentation(newImage, 80) {
             try? jpegData.write(to: imagePath)
@@ -109,7 +108,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
-    }
+    } 
     
     func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
@@ -122,7 +121,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let defaults = UserDefaults.standard
         defaults.set(savedData, forKey: "images")
     }
-    
+
 }
 
 
