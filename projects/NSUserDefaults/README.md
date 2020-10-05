@@ -1,2 +1,2 @@
 # NSUserDefaults: Project 12
-This project has a bug. It crashes when you click on the UIPicker button, throwing a SIGABRT warning. You cannot open the photo library in the app and I do not know if an outlet is the problem? I have checked and they all seem to be connected?
+This project accesses the Photo library in iOS and can change an images label name and save it and the image using NSUserDefaults.
