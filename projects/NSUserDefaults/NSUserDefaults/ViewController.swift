@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  NamesToImages
+//  NSUserDefaults
 //
 //  Created by Damian Johns on 1/06/2020.
 //  Copyright © 2020 Damian Johns. All rights reserved.
